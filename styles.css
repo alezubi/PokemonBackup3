@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pokedex-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #ffcc00; /* Pikachu Yellow */
+    text-shadow: 4px 4px 0px #3b4cca, 8px 8px 0px black; /* Pokémon-style text */
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-ball-icon {
+    width: 40px; /* Adjust the size of the Poké Ball */
+    margin-left: 10px; /* Add space between the text and the image */
+}
+
+
+.pokemon-modal .modal-body {
+    display: flex;
+    flex-direction: row; /* Make the content side by side */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pokemon-modal img {
+    max-width: 300px; /* Controls the image size */
+    height: auto;
+    margin-right: 20px; /* Spacing between the image and text */
+}
+
+.pokemon-modal .modal-body div {
+    max-width: 600px; /* Adjusts the max width of the description area */
+}
+
+.modal-content {
+    padding: 20px;
+    border: 3px solid #ff0000;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    width: 215px;  /* Set the width of the card */
+    height: 300px; /* Set the height of the card */
+    margin: 15px;  /* Add the margin */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.card-img-top {
+    max-height: 200px;  /* Adjust to fit the new card size */
+    object-fit: cover;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* Updated Pokedex Title for Cooler Look */
+.pokedex-title {
+    font-size: 2.5rem;
+    color: #ff0000;
+    text-shadow: 4px 4px 0px yellow, 6px 6px 0px black;
+}
+
+/* 🎨 Styled Search Bar and Buttons */
+#search-container {
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid #ffcc00;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
+    display: inline-block;
+    text-align: center;
+}
+
+/* Styled input field */
+#search-form input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styled dropdown */
+#type-filter {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+/* Search button */
+.search-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff0000; /* Poké Ball Red */
+    border: 3px solid white;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* Hover effect for button */
+.search-btn:hover {
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7);
+}
+
+/* Responsive Search Bar */
+@media (max-width: 768px) {
+    #search-container {
+        width: 90%;
+    }
+    
+    #search-form input,
+    #type-filter,
+    .search-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Pokéball Animation */
+@keyframes floatPokeball {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Floating Pokéballs */
+.pokeball {
+    position: fixed;
+    width: 60px; /* Adjust size */
+    height: 60px;
+    background-size: cover;
+    opacity: 0.7;
+    animation: floatPokeball 4s infinite ease-in-out;
+    z-index: -1; /* Make sure they float behind everything */
+}
+
+/* Different Pokéball designs */
+/* .pokeball1 { background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg'); }   Classic Pokéball */
+.pokeball1 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'); }  /* Classic Pokéball */
+.pokeball2 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png'); }  /* Great Ball */
+.pokeball3 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png'); }  /* Ultra Ball */
+.pokeball4 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png'); }  /* Master Ball */
+.pokeball5 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png'); }  /* Luxury Ball */
+.pokeball6 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png'); }  /* Heal Ball */
+.pokeball7 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/net-ball.png'); }  /* Net Ball */
+.pokeball8 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png'); }  /* Dusk Ball */
+.pokeball9 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png'); }  /* Quick Ball */
+.pokeball10 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png'); }  /* Timer Ball */
+.pokeball11 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/level-ball.png'); }  /* Level Ball */
+.pokeball12 { background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cherish-ball.png'); }  /* Cherish Ball */
+
+/* Random positions */
+.pokeball:nth-child(1) { top: 10%; left: 10%; animation-duration: 4s; }
+.pokeball:nth-child(2) { top: 7%; left: 20%; animation-duration: 5s; }
+.pokeball:nth-child(3) { top: 13%; left: 30%; animation-duration: 6s; }
+.pokeball:nth-child(4) { top: 10%; left: 70%; animation-duration: 4.5s; }
+.pokeball:nth-child(5) { top: 13%; left: 80%; animation-duration: 5.5s; }
+.pokeball:nth-child(6) { top: 7%; left: 90%; animation-duration: 6s; }
+.pokeball:nth-child(7) { top: 40%; right: 90%; animation-duration: 5s; }
+.pokeball:nth-child(8) { top: 60%; right: 85%; animation-duration: 6s; }
+.pokeball:nth-child(9) { top: 75%; right: 90%; animation-duration: 4.5s; }
+.pokeball:nth-child(10) { top: 40%; right: 10%; animation-duration: 5.5s; }
+.pokeball:nth-child(11) { top: 65%; right: 15%; animation-duration: 6s; }
+.pokeball:nth-child(12) { top: 80%; right: 5%; animation-duration: 5s; }
