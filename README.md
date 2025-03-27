@@ -2,7 +2,7 @@ PokeInfo 🃏✨
 Pokémon Card Search and Market Price Tracker
 PokeInfo is a Pokémon card search tool that allows users to look up Pokémon cards by name and filter them by type. The application retrieves card details, including artwork, attributes, and real-time market prices, providing collectors and enthusiasts with an easy way to browse and assess Pokémon cards.
 
-🔎 Search for Pokémon Cards by Name\
+🔎 Search for Pokémon Cards by Name
 
 ![Pokémon Card Image](image_2025-03-26_211949643.png)
 
