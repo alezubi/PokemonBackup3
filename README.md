@@ -17,28 +17,16 @@ PokeInfo is a Pokémon card search tool that allows users to look up Pokémon ca
 🛠️ How to Use
 
 Clone the Repository:
-
-bash
-Copy
-Edit
 git clone https://github.com/alezubi/PokemonBackup3.git
-cd PokeInfo
+cd PokemonBackup3
 
 Install Dependencies:
-
-bash
-Copy
-Edit
 npm install
 
 Run the Project:
-
-bash
-Copy
-Edit
 npm start
-Open the browser and go to:
 
+Open the browser and go to:
 http://localhost:3000
 Use the search bar to enter a Pokémon’s name and find all related cards.
 
