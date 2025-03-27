@@ -6,7 +6,9 @@ PokeInfo is a Pokémon card search tool that allows users to look up Pokémon ca
 
 ![Pokémon Card Image](image_2025-03-26_211949643.png)
 
-🎨 View Pokémon Card Details
+🎨 View Pokémon Card Details 
+
+![Pokémon Card Image](image_2025-03-26_212250974.png)
 
 💰 Check Market Prices
 
