@@ -2,14 +2,11 @@ PokeInfo 🃏✨
 Pokémon Card Search and Market Price Tracker
 PokeInfo is a Pokémon card search tool that allows users to look up Pokémon cards by name and filter them by type. The application retrieves card details, including artwork, attributes, and real-time market prices, providing collectors and enthusiasts with an easy way to browse and assess Pokémon cards.
 
-📸 Screenshots
 🔎 Search for Pokémon Cards by Name
 
 🎨 View Pokémon Card Details
 
 💰 Check Market Prices
-
-(Replace insert-image-url-here with actual image links hosted in your repository or an image hosting service.)
 
 🚀 Features
 ✔️ Search Pokémon Cards by entering the Pokémon name in the search bar.
@@ -18,19 +15,22 @@ PokeInfo is a Pokémon card search tool that allows users to look up Pokémon ca
 ✔️ Check Market Prices for each card to stay updated on its current value.
 
 🛠️ How to Use
+
 Clone the Repository:
 
 bash
 Copy
 Edit
-git clone https://github.com/your-username/PokeInfo.git
+git clone https://github.com/alezubi/PokemonBackup3.git
 cd PokeInfo
+
 Install Dependencies:
 
 bash
 Copy
 Edit
 npm install
+
 Run the Project:
 
 bash
@@ -39,9 +39,6 @@ Edit
 npm start
 Open the browser and go to:
 
-arduino
-Copy
-Edit
 http://localhost:3000
 Use the search bar to enter a Pokémon’s name and find all related cards.
 
@@ -54,12 +51,4 @@ React.js – Frontend framework
 
 Pokémon TCG API – Fetching card data
 
-Tailwind CSS – Styling
-
-Axios – API calls
-
-💡 Future Enhancements
-🔹 Add a favorites feature to save preferred cards.
-🔹 Implement historical price tracking for market analysis.
-🔹 Introduce user authentication to personalize search history.
 
