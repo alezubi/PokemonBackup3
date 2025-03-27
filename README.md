@@ -20,8 +20,6 @@ PokeInfo is a Pokémon card search tool that allows users to look up Pokémon ca
 
 🛠️ How to Use
 
- 🛠️ How to Use
-
 1. **Clone the Repository**: 
    ```bash
    git clone https://github.com/alezubi/PokemonBackup3.git
